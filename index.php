@@ -30,14 +30,14 @@ Listagem de Usuários
         </tr>
 
         <?php
-        // Aqui você precisa percorrer os resultados da consulta e adicionar as linhas à tabela
+        
         while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
             echo "<tr>";
             echo "<td>{$linha['nome']}</td>";
             echo "<td>{$linha['login']}</td>";
             echo "<td><a href='FormEditar.php ?id={$linha['id']}'>Editar</a> - <a href='excluir.php?id={$linha['id']}'>Excluir</a></td>";
             echo "</tr>";
-            // Lembre-se de substituir 'nome', 'login' e 'id' pelos nomes reais das colunas em sua tabela
+            
         }
         ?>
     </table>
@@ -52,7 +52,7 @@ Listagem de Usuários
 
 .table, th, td {
         
-        min-width: 100px; /* Defina uma largura mínima para cada coluna */
+        min-width: 100px; 
 }
 
 th, td {
